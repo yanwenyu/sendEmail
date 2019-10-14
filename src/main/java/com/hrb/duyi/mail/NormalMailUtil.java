@@ -34,7 +34,7 @@ public class NormalMailUtil {
         MimeMessage message = new MimeMessage(session);
         try {
             // 发件人
-            Address address = new InternetAddress("duyioa@duyi-inc.com");
+            Address address = new InternetAddress("xxxxx@xxx.com");
             message.setFrom(address);
             // 收件人
             Address toAddress = new InternetAddress(toUser);
@@ -63,7 +63,7 @@ public class NormalMailUtil {
         try {
             Transport transport = session.getTransport("smtp");
             //设置host，user,password;如：host:smtp.qq.com,user:xxxx@qq.com,pwd:123123;
-            transport.connect("smtp.duyiedu.com", "duyioa@duyi-inc.com", "Dy123456");
+            transport.connect("smtp.duyiedu.com", "xxxxxx", "xxxxx");
             transport.sendMessage(message, message.getAllRecipients());
             transport.close();
 

@@ -2,7 +2,7 @@ package com.hrb.duyi.mail;
 
 public class Demo2 {
     public static void main(String[] args) {
-        String toUser = "382246268@qq.com";
+        String toUser = "xxxxxx@qq.com";
         String subject = "测试邮件";
         StringBuffer sb = new StringBuffer();
         String content = "hello";

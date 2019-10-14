@@ -83,7 +83,7 @@ public class AccessoryMailUtil {
         try {
             Transport transport = session.getTransport("smtp");
             //设置host，user,password;如：host:smtp.qq.com,user:xxxx@qq.com,pwd:123123;
-            transport.connect("smtp.duyiedu.com", "duyioa@duyi-inc.com", "Dy123456");
+            transport.connect("smtp.duyiedu.com", "xxxxxx", "xxxxxx");
             transport.sendMessage(message, message.getAllRecipients());
             transport.close();
 
