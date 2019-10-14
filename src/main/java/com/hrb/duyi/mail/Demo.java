@@ -10,6 +10,6 @@ public class Demo {
                        "<div bgcolor='#f1fcfa' style='border:1px solid #d9f4ee; font-size:14px; line-height:22px; " +
                        "color:#005aa0;padding-left:1px;padding-top:5px;   padding-bottom:5px;'>" +
                          content + "</div>");
-        MailUtil.sendMail(toUser,subject,sb.toString());
+        NormalMailUtil.sendMail(toUser,subject,sb.toString());
     }
 }

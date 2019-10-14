@@ -8,8 +8,15 @@ import javax.mail.internet.MimeMultipart;
 import java.util.Date;
 import java.util.Properties;
 
-public class MailUtil {
+public class NormalMailUtil {
 
+    /**
+     * 发送不带附件的邮件
+     * @param toUser 收件人
+     * @param subject 主题
+     * @param content 内容
+     * @return
+     */
     private static boolean mailConfig(String toUser,String subject,String content){
         final String SSL_FACTORY = "javax.net.ssl.SSLSocketFactory";
         Properties properties = new Properties();
